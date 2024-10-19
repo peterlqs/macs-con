@@ -50,7 +50,7 @@ const CustomCursor = () => {
 
   return (
     <div
-      className={`fixed z-50 top-0 left-0 w-8 h-8  backdrop-invert rounded-md transition-transform duration-300 ease-out transition-opacity ${
+      className={`fixed z-50 top-0 left-0 w-8 h-8  backdrop-invert rounded-full duration-300 ease-out transition-opacity ${
         visible ? "opacity-100" : "opacity-0"
       }`}
       style={{

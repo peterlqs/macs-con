@@ -3,6 +3,9 @@ import { Hero } from "@/components/section/Hero";
 import { Banner } from "@/components/Banner";
 import { Navbar } from "@/components/Navbar";
 import Schedule from "@/components/section/Schedule";
+import About from "@/components/section/About";
+import Marquee from "@/components/ui/marquee";
+import { MarqueeSection } from "@/components/section/MarqueeSection";
 
 export default function Home() {
   return (
@@ -12,7 +15,9 @@ export default function Home() {
           <Banner />
           <Navbar />
           <Hero />
+          <About />
           <Schedule />
+          <MarqueeSection />
         </div>
       </main>
     </div>

@@ -20,6 +20,7 @@ export default function Schedule() {
           <br />
           **Note:** Please arrive 15 minutes early to ensure a prompt start. 
           Light refreshments will be provided."
+        className="bg-background"
       />
 
       <div className="flex flex-col items-center gap-8">

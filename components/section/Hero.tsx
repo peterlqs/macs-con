@@ -10,6 +10,7 @@ import { MapIcon } from "lucide-react";
 import { MovingGradient } from "../MovingGradient";
 import * as motion from "framer-motion/client";
 import { GridBackground } from "../GridBackground";
+import { RainbowButton } from "../ui/rainbow-button";
 
 export function Hero() {
   const FADE_UP_ANIMATION_VARIANTS = {
@@ -61,13 +62,15 @@ export function Hero() {
           <Button variant={"secondary"}>
             Info <InfoCircledIcon className="ml-2" />
           </Button>
-          <div className="relative inline-flex overflow-hidden p-[2px] rounded-md">
-            {/* <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" /> */}
+          {/* <div className="relative inline-flex overflow-hidden p-[2px] rounded-md">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#f83b60_0%,#ae9df5_50%,#f83b60_100%)]" />
             <Button className="inline-flex h-full w-full border-none backdrop-blur-3xl">
               Ticket <ArrowRightIcon className="ml-2" />
             </Button>
-          </div>{" "}
+          </div>{" "} */}
+          <RainbowButton className="h-9 py-2 px-6 rounded-md">
+            Ticket <ArrowRightIcon className="ml-2" />
+          </RainbowButton>
         </motion.div>
 
         <motion.div
