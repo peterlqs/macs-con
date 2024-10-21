@@ -6,6 +6,8 @@ import Schedule from "@/components/section/Schedule";
 import About from "@/components/section/About";
 import Marquee from "@/components/ui/marquee";
 import { MarqueeSection } from "@/components/section/MarqueeSection";
+import Speaker from "@/components/section/Speakers"
+import Sponsor from "@/components/section/Sponsor";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
           <About />
           <Schedule />
           <MarqueeSection />
+          <Speaker />
+          <Sponsor />
         </div>
       </main>
     </div>
