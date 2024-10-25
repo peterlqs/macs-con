@@ -8,7 +8,9 @@ import Marquee from "@/components/ui/marquee";
 import { MarqueeSection } from "@/components/section/MarqueeSection";
 import Speaker from "@/components/section/Speakers"
 import Sponsor from "@/components/section/Sponsor";
-
+import FAQ from "@/components/section/FAQ";
+import COC from "@/components/section/COC";
+import Footer from "@/components/section/Footer"
 export default function Home() {
   return (
     <div className="">
@@ -22,6 +24,9 @@ export default function Home() {
           <MarqueeSection />
           <Speaker />
           <Sponsor />
+          <FAQ/>
+          <COC/>
+          <Footer/>
         </div>
       </main>
     </div>
