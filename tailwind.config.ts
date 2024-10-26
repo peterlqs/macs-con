@@ -64,7 +64,8 @@ const config: Config = {
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
+  			sm: 'calc(var(--radius) - 4px)',
+			large: 'calc(var(--radius) + 80px)'
   		},
   		animation: {
   			rainbow: 'rainbow var(--speed, 2s) infinite linear',

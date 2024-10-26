@@ -2,8 +2,9 @@
 
 import * as React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { ChevronDownIcon } from "@radix-ui/react-icons"
-
+// import { ChevronDownIcon } from "@radix-ui/react-icons"
+import { Button } from "@/components/ui/button"
+import { CircleArrowDown } from 'lucide-react';
 import { cn } from "@/lib/utils"
 
 const Accordion = AccordionPrimitive.Root
@@ -24,17 +25,19 @@ const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
 >(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className="flex">
+  <AccordionPrimitive.Header className="flex bg-black rounded-tl-3xl rounded-br-3xl outline outline-zinc-800 outline-1 ">
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180",
+        "flex flex-1 items-center justify-between py-4 px-4 text-sm font-medium transition-all hover: [&[data-state=open]>svg]:-rotate-90 text-2xl font-bold rounded-none",
         className
       )}
       {...props}
     >
       {children}
-      <ChevronDownIcon className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" />
+    
+      <CircleArrowDown color="#fff" strokeWidth={1} className="h-12 w-12 shrink-0 text-muted-foreground transition-transform duration-200 " />
+    
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ))
@@ -46,7 +49,7 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    className="overflow-hidden bg-black  rounded-br-3xl text-base data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down text-left p-4   "
     {...props}
   >
     <div className={cn("pb-4 pt-0", className)}>{children}</div>

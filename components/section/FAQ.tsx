@@ -15,6 +15,7 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion"
 
+
 export default function FAQ() {
     return (
       <div className="relative w-full section-container flex-auto padding-section flex flex-col pt-[15vh] items-center justify-center  text-center">
@@ -33,27 +34,28 @@ export default function FAQ() {
           className="bg-background"
         />
 
-<Accordion type="single" collapsible className="w-full">
-      <AccordionItem value="item-1">
-     <AccordionTrigger> What is MACSCON?</AccordionTrigger> 
+<Accordion type="single" collapsible className="w-full ">
+      <AccordionItem value="item-1" >
+     <AccordionTrigger > What is MACSCON?</AccordionTrigger> 
         <AccordionContent>
         MACSCON 2024 is the first ever student-run conference designed to  connect aspiring tech enthusiasts with industry professionals. It's a  chance to learn new skills, network with experts, and explore the  exciting world of technology.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-2">
-        <AccordionTrigger>What is MACSCON?</AccordionTrigger>
+      <AccordionItem value="item-2" className="py-8 ">
+        <AccordionTrigger >What is MACSCON?</AccordionTrigger>
         <AccordionContent>
         MACSCON 2024 is the first ever student-run conference designed to  connect aspiring tech enthusiasts with industry professionals. It's a  chance to learn new skills, network with experts, and explore the  exciting world of technology.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>What is MACSCON?</AccordionTrigger>
+        <AccordionTrigger >What is MACSCON?</AccordionTrigger>
         <AccordionContent>
         MACSCON 2024 is the first ever student-run conference designed to  connect aspiring tech enthusiasts with industry professionals. It's a  chance to learn new skills, network with experts, and explore the  exciting world of technology.
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-
+  
+  
 
 
 
