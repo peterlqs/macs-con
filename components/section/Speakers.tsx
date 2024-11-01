@@ -44,7 +44,7 @@ export default function Schedule() {
         key={index}
          className="pl-5 md:basis-1/4 lg:basis-1/4"
         >
-           <div className="relative flex flex-col items-center justify-center bg-black p-4">
+           <div className="relative flex flex-col items-center justify-center bg-black rounded-tl-3xl rounded-br-3xl  p-4">
               <img
                 src="/speakers.png"
                 alt="Speakers"

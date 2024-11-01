@@ -24,6 +24,7 @@ export default function Home() {
           <MarqueeSection />
           <Speaker />
           <Sponsor />
+          <MarqueeSection />
           <FAQ/>
           <COC/>
           <Footer/>

@@ -13,14 +13,13 @@ interface SponsorSectionProps {
   images: string[];
 }
 
-
 const SponsorSection: React.FC<SponsorSectionProps> = ({ title, titleColor, altText, images }) => (
   <div>
-    <h1 className={`text-center ${titleColor} text-5xl font-semibold mb-4`}>{title}</h1>
-    <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 ">
+    <h1 className={`text-center ${titleColor} text-4xl md:text-5xl font-semibold mb-8 md:mb-12`}>{title}</h1>
+    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {images.map((imageSrc, index) => (
-        <div key={index} className="bg-black p-12 rounded-md flex items-center justify-center rounded-tl-large rounded-br-large">
-          <Image src={imageSrc} alt={`${altText} ${index + 1}`} className=" object-cover"  width={500} height={500} />
+        <div key={index} className="bg-black p-6 sm:p-8 md:p-12 rounded-md flex items-center justify-center rounded-tl-large rounded-br-large">
+          <Image src={imageSrc} alt={`${altText} ${index + 1}`} className="object-cover" width={400} height={400} />
         </div>
       ))}
     </div>
@@ -28,21 +27,18 @@ const SponsorSection: React.FC<SponsorSectionProps> = ({ title, titleColor, altT
 );
 
 export default function Sponsor() {
-    return (
-      <div className="relative w-full section-container flex-auto padding-section flex flex-col pt-[15vh] items-center justify-center  text-center">
-        <MovingGradient />
-        <GridBackground />
-        <SectionHeader
-          title="Sponsor"
-          description="
-            Please arrive 15 minutes early to ensure a prompt start. 
-            Light refreshments will be provided."
-            className="bg-background"
-        />
- 
+  return (
+    <div className="relative w-full section-container flex-auto padding-section flex flex-col pt-[10vh] md:pt-[15vh] items-center justify-center text-center">
+      <MovingGradient />
+      <GridBackground />
+      <SectionHeader
+        title="Sponsor"
+        description="Please arrive 15 minutes early to ensure a prompt start. Light refreshments will be provided."
+        className="bg-background"
+      />
+
       
-      {/* Sponsor sections */}
-      <div className="space-y-12 ">
+      <div className="space-y-8 md:space-y-12">
         <SponsorSection
           title="EVENT SPONSORS"
           titleColor="bg-gradient-to-r from-[#FFA366] via-[#89C5F5] to-[#F83B60] inline-block text-transparent bg-clip-text"
@@ -74,12 +70,6 @@ export default function Sponsor() {
           images={["/Atlassian.png", "/Atlassian.png", "/Atlassian.png"]}
         />
       </div>
- 
-
-
-  </div>
-        
-      
-    );
-  }
-  
+    </div>
+  );
+}
