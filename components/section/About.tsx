@@ -16,7 +16,7 @@ import { EmblaOptionsType } from "embla-carousel";
 
 export default function About() {
   return (
-    <div className="bg-secondary-foreground padding-section-y -z-10 rounded-3xl text-secondary relative w-full section-container ">
+    <div className="bg-secondary-foreground padding-section-y z-10 rounded-3xl text-secondary relative w-full section-container ">
       <div className="padding-section-x">
         <MovingGradient />
         <div className="absolute inset-0 flex justify-start items-start">
@@ -47,11 +47,11 @@ export default function About() {
               key={index}
               className="pl-4 md:basis-1/2 lg:basis-1/2  "
             >
-              <div className="relative flex aspect-video items-center justify-center rounded-tl-3xl rounded-br-3xl">
+              <div className="relative flex items-center justify-center rounded-tl-3xl rounded-br-3xl">
                 <img
                   src="/schedule.png"
                   alt="Schedule"
-                  className="rounded-md aspect-video object-cover rounded-tl-3xl rounded-br-3xl"
+                  className="rounded-md aspect-[4/3] object-cover rounded-tl-3xl rounded-br-3xl"
                 />
                 <div className="p-2 max-w-xs absolute bottom-0 left-0 bg-secondary-foreground rounded-tr-xl">
                   <h3 className="font-semibold">Workshop</h3>

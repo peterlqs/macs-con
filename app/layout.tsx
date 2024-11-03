@@ -40,8 +40,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {" "}
-          {/* <Banner />
-          <Navbar /> */}
           {children}
           <CustomCursor />
         </ThemeProvider>

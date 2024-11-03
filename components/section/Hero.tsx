@@ -18,9 +18,8 @@ export function Hero() {
     show: { opacity: 1, y: 0, transition: { type: "spring" } },
   };
   return (
-    <div className="relative flex-auto padding-section flex flex-col pt-[15vh] items-center justify-center  text-center">
+    <div className="relative w-full h-full flex-auto padding-section flex flex-col pt-[5vh] items-center justify-center  text-center">
       <MovingGradient />
-      <GridBackground />
 
       <motion.div
         initial="hidden"
@@ -62,12 +61,6 @@ export function Hero() {
           <Button variant={"secondary"}>
             Info <InfoCircledIcon className="ml-2" />
           </Button>
-          {/* <div className="relative inline-flex overflow-hidden p-[2px] rounded-md">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#f83b60_0%,#ae9df5_50%,#f83b60_100%)]" />
-            <Button className="inline-flex h-full w-full border-none backdrop-blur-3xl">
-              Ticket <ArrowRightIcon className="ml-2" />
-            </Button>
-          </div>{" "} */}
           <RainbowButton className="h-9 py-2 px-6 rounded-md">
             Ticket <ArrowRightIcon className="ml-2" />
           </RainbowButton>
