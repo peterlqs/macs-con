@@ -9,6 +9,11 @@ import { MarqueeSection } from "@/components/section/MarqueeSection";
 import * as motion from "framer-motion/client";
 import { GridBackground } from "@/components/GridBackground";
 
+import Speaker from "@/components/section/Speakers";
+import Sponsor from "@/components/section/Sponsor";
+import FAQ from "@/components/section/FAQ";
+import COC from "@/components/section/COC";
+import Footer from "@/components/section/Footer";
 export default function Home() {
   const slideInVariants = {
     hidden: { opacity: 0, y: -50 },
@@ -37,6 +42,15 @@ export default function Home() {
             <Navbar />
           </motion.div>
           <Hero />
+          <About />
+          <Schedule />
+          <MarqueeSection />
+          <Speaker />
+          <Sponsor />
+          <MarqueeSection />
+          <FAQ />
+          <COC />
+          <Footer />
         </div>
         <About />
         <Schedule />
