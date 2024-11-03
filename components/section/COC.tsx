@@ -1,10 +1,6 @@
-import { ArrowRightIcon, DownloadIcon } from "lucide-react";
-import { Button } from "../ui/button";
-import { GridBackground } from "../GridBackground";
 import { MovingGradient } from "../MovingGradient";
-import Image from "next/image";
 import { SectionHeader } from "../SectionHeader";
-import { RainbowButton } from "../ui/rainbow-button";
+import { Button } from "../ui/button";
 export default function COC() {
   return (
     <div className="relative w-full section-container flex-auto padding-section flex flex-col  items-center justify-center  text-center">

@@ -1,15 +1,13 @@
-import React from "react";
-import Image from "next/image";
 import {
   ArrowRightIcon,
   CalendarIcon,
   InfoCircledIcon,
 } from "@radix-ui/react-icons";
-import { Button } from "../ui/button";
-import { MapIcon } from "lucide-react";
-import { MovingGradient } from "../MovingGradient";
 import * as motion from "framer-motion/client";
-import { GridBackground } from "../GridBackground";
+import { MapIcon } from "lucide-react";
+import Image from "next/image";
+import { MovingGradient } from "../MovingGradient";
+import { Button } from "../ui/button";
 import { RainbowButton } from "../ui/rainbow-button";
 
 export function Hero() {

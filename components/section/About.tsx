@@ -1,8 +1,4 @@
-import { ArrowRightIcon, DownloadIcon } from "lucide-react";
-import { Button } from "../ui/button";
-import { GridBackground } from "../GridBackground";
 import { MovingGradient } from "../MovingGradient";
-import Image from "next/image";
 import { SectionHeader } from "../SectionHeader";
 import {
   Carousel,
@@ -11,8 +7,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
-import EmblaCarousel from "../test";
-import { EmblaOptionsType } from "embla-carousel";
 
 export default function About() {
   return (
@@ -56,7 +50,7 @@ export default function About() {
                 <div className="p-2 max-w-xs absolute bottom-0 left-0 bg-secondary-foreground rounded-tr-xl">
                   <h3 className="font-semibold">Workshop</h3>
                   <p className="text-sm">
-                    Lorem ipsum is amazing. That's why we use it and another
+                    Lorem ipsum is amazing. That is why we use it and another
                     reason here.
                   </p>
                 </div>

@@ -1,13 +1,6 @@
-import { GridBackground } from "../GridBackground";
-import Image from "next/image";
-import { MovingGradient } from "../MovingGradient";
+import { CalendarIcon } from "@radix-ui/react-icons";
 import { MapIcon } from "lucide-react";
-import {
-  ArrowRightIcon,
-  CalendarIcon,
-  InfoCircledIcon,
-} from "@radix-ui/react-icons";
-import * as motion from "framer-motion/client";
+import Image from "next/image";
 
 export default function COC() {
   return (
