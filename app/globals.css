@@ -16,19 +16,46 @@ body {
   .section-container {
     max-width: 1900px;
     margin: auto auto;
-    /* margin: auto auto; */
   }
 
   .padding-section {
-    padding: 4rem 4rem;
+    padding: 3rem 1rem;
   }
 
   .padding-section-x {
-    padding: 0rem 4rem;
+    padding: 0rem 1rem;
   }
 
   .padding-section-y {
-    padding: 4rem 0rem;
+    padding: 3rem 0rem;
+  }
+
+  @media (min-width: 640px) {
+    .padding-section {
+      padding: 3rem 3rem;
+    }
+
+    .padding-section-x {
+      padding: 0rem 3rem;
+    }
+
+    .padding-section-y {
+      padding: 3rem 0rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .padding-section {
+      padding: 4rem 4rem;
+    }
+
+    .padding-section-x {
+      padding: 0rem 4rem;
+    }
+
+    .padding-section-y {
+      padding: 4rem 0rem;
+    }
   }
 
   :root {

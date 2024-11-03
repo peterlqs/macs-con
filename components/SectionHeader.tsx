@@ -14,7 +14,7 @@ export function SectionHeader({
   const parsedDescription = parseDescription(description); // Parse description before rendering
 
   return (
-    <div className={`z-50 grid grid-cols-2 gap-8 mb-16 w-full`}>
+    <div className={`z-50 grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 w-full`}>
       <SectionTitle title={title} className={className} />
       <SectionDescription description={parsedDescription} />
     </div>
@@ -34,7 +34,7 @@ const SectionTitle = ({
       id="headerTitle"
       className={`px-4 py-2 backdrop-blur-3xl inline-flex w-fit rounded-tl-3xl rounded-br-3xl ${className}`}
     >
-      <h2 className="text-3xl italic font-extrabold">{title}</h2>
+      <h2 className="text-4xl italic font-extrabold">{title}</h2>
     </div>
   </div>
 );

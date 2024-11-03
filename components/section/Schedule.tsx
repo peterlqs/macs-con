@@ -7,9 +7,9 @@ import { SectionHeader } from "../SectionHeader";
 
 export default function Schedule() {
   return (
-    <div className="relative w-full section-container flex-auto padding-section flex flex-col pt-[15vh] items-center justify-center  text-center">
+    <div className="relative w-full section-container flex-auto padding-section flex flex-col  items-center justify-center  text-center">
       <MovingGradient />
-      <GridBackground />
+      {/* <GridBackground/> */}
       <SectionHeader
         title="Schedule"
         description="**Date:** October 25, 2024 

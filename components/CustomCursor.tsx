@@ -6,7 +6,7 @@ const CustomCursor = () => {
   const [visible, setVisible] = useState(false); // Track visibility for opacity
   useEffect(() => {
     // Hide the default cursor
-    document.body.style.cursor = "none";
+    // document.body.style.cursor = "none";
 
     const handleMouseMove = (event: MouseEvent) => {
       setPosition({ x: event.clientX, y: event.clientY });
@@ -50,11 +50,11 @@ const CustomCursor = () => {
 
   return (
     <div
-      className={`fixed z-50 top-0 left-0 w-8 h-8  backdrop-invert rounded-full duration-300 ease-out transition-opacity ${
+      className={`fixed top-0 left-0 w-8 h-8 backdrop-invert rounded-full duration-300 ease-out transition-opacity ${
         visible ? "opacity-100" : "opacity-0"
       }`}
       style={{
-        transform: `translate(${position.x}px, ${position.y}px)`,
+        transform: `translate(${position.x - 16}px, ${position.y - 16}px)`, // Adjust for cursor center
         transition: "opacity 0.5s ease-in-out", // Custom opacity transition time (0.5s in this case)
       }}
     />

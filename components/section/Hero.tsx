@@ -18,7 +18,7 @@ export function Hero() {
     show: { opacity: 1, y: 0, transition: { type: "spring" } },
   };
   return (
-    <div className="relative w-full h-full flex-auto padding-section flex flex-col pt-[5vh] items-center justify-center  text-center">
+    <div className="w-full h-full flex-auto padding-section flex flex-col pt-[10svh] md:pt-[10svh] items-center justify-center  text-center">
       <MovingGradient />
 
       <motion.div
@@ -68,11 +68,11 @@ export function Hero() {
 
         <motion.div
           id="infoBanner"
-          className="relative grid grid-cols-2 gap-8 justify-between bg-background px-8 py-2 mt-[15vh] w-auto rounded-3xl"
+          className="relative z-20 mb-4 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 justify-between bg-background px-4 md:px-8 py-4 md:py-2 mt-[15vh] w-auto rounded-3xl"
           variants={FADE_UP_ANIMATION_VARIANTS}
         >
           <div className="flex gap-4">
-            <div className="rounded-full border border-muted p-3">
+            <div className="rounded-full h-fit border border-muted p-3">
               <CalendarIcon className="h-6 w-6" />
             </div>
             <div className="flex flex-col text-left justify-center">
@@ -81,7 +81,7 @@ export function Hero() {
             </div>
           </div>{" "}
           <div className="flex gap-4">
-            <div className="rounded-full border border-muted p-3">
+            <div className="rounded-full h-fit border border-muted p-3">
               <MapIcon className="h-6 w-6" />
             </div>
             <div className="flex flex-col text-left justify-center">

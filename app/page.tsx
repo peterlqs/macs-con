@@ -8,12 +8,12 @@ import Marquee from "@/components/ui/marquee";
 import { MarqueeSection } from "@/components/section/MarqueeSection";
 import * as motion from "framer-motion/client";
 import { GridBackground } from "@/components/GridBackground";
-
 import Speaker from "@/components/section/Speakers";
 import Sponsor from "@/components/section/Sponsor";
 import FAQ from "@/components/section/FAQ";
 import COC from "@/components/section/COC";
 import Footer from "@/components/section/Footer";
+
 export default function Home() {
   const slideInVariants = {
     hidden: { opacity: 0, y: -50 },
@@ -29,32 +29,31 @@ export default function Home() {
   };
   return (
     <div className="">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start ">
-        <div className="w-full h-svh">
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <div className="fixed inset-0 ">
           <GridBackground />
-          <motion.div
-            initial="hidden"
-            className="w-full"
-            animate="visible"
-            variants={slideInVariants}
-          >
-            <Banner />
-            <Navbar />
-          </motion.div>
+        </div>{" "}
+        <motion.div
+          initial="hidden"
+          className="w-full sticky top-0 z-[99]"
+          animate="visible"
+          variants={slideInVariants}
+        >
+          <Banner />
+          <Navbar />
+        </motion.div>
+        <div className="w-full">
           <Hero />
-          <About />
-          <Schedule />
-          <MarqueeSection />
-          <Speaker />
-          <Sponsor />
-          <MarqueeSection />
-          <FAQ />
-          <COC />
-          <Footer />
         </div>
         <About />
         <Schedule />
         <MarqueeSection />
+        <Speaker />
+        <Sponsor />
+        <MarqueeSection />
+        <FAQ />
+        <COC />
+        <Footer />
       </main>
     </div>
   );

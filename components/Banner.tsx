@@ -56,7 +56,7 @@ export function Banner() {
   if (isExpired) return null; // Hide the banner when time is up
 
   return (
-    <div className="bg-primary py-1 flex items-center justify-center">
+    <div className="bg-primary px-1 py-1 flex text-center items-center justify-center">
       <span className="text-primary-foreground text-sm italic font-bold uppercase">
         Get ticket now before 7/12 - {formatTime(timeLeft.days)} days left
       </span>

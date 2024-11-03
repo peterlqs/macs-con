@@ -16,11 +16,11 @@ import { EmblaOptionsType } from "embla-carousel";
 
 export default function About() {
   return (
-    <div className="bg-secondary-foreground padding-section-y z-10 rounded-3xl text-secondary relative w-full section-container ">
+    <div className=" bg-secondary-foreground overflow-hidden padding-section-y z-10 rounded-3xl text-secondary relative w-full section-container ">
       <div className="padding-section-x">
         <MovingGradient />
         <div className="absolute inset-0 flex justify-start items-start">
-          <div className="z-auto ml-12 w-60 h-60 bg-primary-purple blur-3xl opacity-50"></div>
+          <div className="-z-10 ml-12 w-60 h-60 bg-primary-purple blur-3xl opacity-50"></div>
         </div>
         <SectionHeader
           title="About"
@@ -36,7 +36,7 @@ export default function About() {
         />
       </div>
       <Carousel
-        className="w-full "
+        className="w-full px-2 md:px-0"
         opts={{
           loop: true,
         }}
@@ -45,7 +45,7 @@ export default function About() {
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem
               key={index}
-              className="pl-4 md:basis-1/2 lg:basis-1/2  "
+              className="pl-4 md:basis-1/2 lg:basis-1/2"
             >
               <div className="relative flex items-center justify-center rounded-tl-3xl rounded-br-3xl">
                 <img
