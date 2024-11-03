@@ -9,8 +9,11 @@ export function MarqueeSection() {
       <div className="h-fit overflow-hidden">
         <div className="flex flex-row bg-black">
           <Marquee pauseOnHover className="[--duration:20s]">
-            {allText.map((text) => (
-              <div className="text-7xl italic uppercase font-bold mr-8">
+            {allText.map((text, index) => (
+              <div
+                key={index}
+                className="text-7xl italic uppercase font-bold mr-8"
+              >
                 {text}
               </div>
             ))}
