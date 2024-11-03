@@ -8,6 +8,7 @@ import {
   InfoCircledIcon,
 } from "@radix-ui/react-icons";
 import * as motion from "framer-motion/client";
+
 export default function COC() {
   return (
     <footer className="bg-black w-full z-10 border-t">
