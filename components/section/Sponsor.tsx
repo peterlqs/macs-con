@@ -56,6 +56,13 @@ export default function Sponsor() {
       />
 
       <div className="space-y-8 md:space-y-24">
+      <SponsorSection
+          title="UNIVERSITY SPONSORS"
+          titleColor="bg-[#A6192E]  inline-block text-transparent bg-clip-text"
+          altText="Event Sponsor"
+          images={["/Atlassian.png", "/Atlassian.png", "/Atlassian.png"]}
+        />
+
         <SponsorSection
           title="EVENT SPONSORS"
           titleColor="bg-gradient-to-r from-[#FFA366] via-[#89C5F5] to-[#F83B60] inline-block text-transparent bg-clip-text"

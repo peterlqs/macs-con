@@ -21,39 +21,22 @@ export default function COC() {
       <div className="relative w-full section-container flex-auto mb-20 items-center justify-center  text-left bg-black rounded-lg outline outline-zinc-800 outline-2 p-8">
         <p className="mb-4">
           {" "}
-          We have NO TOLERANCE for physical/verbal/sexual harassment of any
-          human! Our “Code of Conduct” is “Be Excellent to Each Other” AKA the
-          Golden Rule. Failing that, it is “Do not be an Ass* or we will kick
-          your ass out!”.
+          At MACSCON (and MACS in general), our rules are simple: Don’t create problems, and there won’t be a problem. 
+          We have a ZERO TOLERANCE policy for harassment of any kind including verbal, physical and sexual harassment to any person.
         </p>
         <p className="mb-4">
-          Why do we have an official anti-harassment policy for BSides Canberra?
-          First, it is necessary (unfortunately). Harassment at events is
-          incredibly common. Second, it sets expectations for behavior at the
-          event. Simply having an anti-harassment policy can prevent harassment
-          all by itself. Third, it encourages people to attend who have had bad
-          experiences at other events. Finally, it gives event staff
-          instructions on how to handle harassment quickly, with the minimum
-          amount of disruption or bad press for the event.
+        Harassment includes offensive verbal comments related to gender, sexual orientation, disability, gender identity, age, race, religion, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
         </p>
         <p className="mb-4">
-          Harassment includes offensive verbal comments related to gender,
-          sexual orientation, disability, gender identity, age, race, religion,
-          deliberate intimidation, stalking, following, harassing photography or
-          recording, sustained disruption of talks or other events,
-          inappropriate physical contact, and unwelcome sexual attention.
-          Participants asked to stop any harassing behavior are expected to
-          comply immediately.
+        Participants asked to stop any harassing behaviour(s) are expected to comply immediately. This policy applies to both physical and online interactions.
         </p>
-        Asking questions of a speaker during their talk, to get clarity or
-        debate a point is NOT being an ass - heckling or haranguing the speaker
-        IS. Harassment online or in electronic venues will be treated as
-        seriously as physical harassment. If you are not sure, ask, or err on
-        the side of basic decency and common courtesy. If what they are doing
-        would not be acceptable to have done to you, your best friend, your
-        worst enemy, your sister, niece, daughter, brother, nephew, son, mother,
-        father, or any human being, do not let them treat anyone else that way -
-        whether you know them or not. If someone asks you to stop – stop.
+        <p className="mb-4">
+        Any patron displaying unlawful and/or disruptive behaviour will be asked to leave immediately. If this is not followed, patrons exhibiting this behaviour will be kicked out and banned from any future MACS events as well as reported to Macquarie University and further authorities if need be.
+        </p>
+        <p>
+        Any prohibited, unwelcome or unprofessional behaviour that is witnessed or suspected, should be reported immediately to a volunteer who can be discerned by their BLUE badge.
+        Thank you for helping us create a safe and welcoming environment for everyone!
+        </p>
       </div>
       {/* <div className="flex justify-between items-center w-full   bg-black rounded-lg outline outline-zinc-800 outline-2 p-8 ">
         <span className="text-3xl italic font-semibold">
