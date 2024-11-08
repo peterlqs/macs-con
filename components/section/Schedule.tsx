@@ -4,10 +4,14 @@ import { GridBackground } from "../GridBackground";
 import { MovingGradient } from "../MovingGradient";
 import Image from "next/image";
 import { SectionHeader } from "../SectionHeader";
+import ComingSoon from "../ComingSoon";
 
 export default function Schedule() {
   return (
-    <div className="relative w-full section-container flex-auto padding-section flex flex-col  items-center justify-center  text-center">
+    <div
+      id="schedule"
+      className="relative w-full section-container flex-auto padding-section flex flex-col  items-center justify-center  text-center"
+    >
       <MovingGradient />
       {/* <GridBackground/> */}
       <SectionHeader
@@ -22,8 +26,9 @@ export default function Schedule() {
           Light refreshments will be provided."
         className="bg-background"
       />
+      <ComingSoon />
 
-      <div className="flex flex-col items-center gap-8">
+      {/* <div className="flex flex-col items-center gap-8">
         <div className="relative w-40rem overflow-hidden rounded-md  ">
           <Image
             src="/schedule.png"
@@ -45,7 +50,7 @@ export default function Schedule() {
             }
           />
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -13,6 +13,7 @@ import {
 } from "../ui/carousel";
 import EmblaCarousel from "../test";
 import { EmblaOptionsType } from "embla-carousel";
+import ComingSoon from "../ComingSoon";
 
 export default function Schedule() {
   return (
@@ -31,7 +32,8 @@ export default function Schedule() {
           Light refreshments will be provided."
         className="bg-background"
       />
-      <Carousel
+      <ComingSoon />
+      {/* <Carousel
         className="w-full"
         opts={{
           loop: true,
@@ -69,7 +71,7 @@ export default function Schedule() {
           <CarouselPrevious className="bg-primary-foreground text-white" />
           <CarouselNext className="bg-primary-foreground text-white" />
         </div>
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 }

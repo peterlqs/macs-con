@@ -10,7 +10,10 @@ import {
 
 export default function FAQ() {
   return (
-    <div className="relative w-full section-container flex-auto padding-section flex flex-col  items-center justify-center  text-center">
+    <div
+      id="faq"
+      className="relative w-full section-container flex-auto padding-section flex flex-col  items-center justify-center  text-center"
+    >
       <MovingGradient />
       {/* <GridBackground/> */}
       <SectionHeader

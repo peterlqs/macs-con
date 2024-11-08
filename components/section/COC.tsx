@@ -3,7 +3,10 @@ import { SectionHeader } from "../SectionHeader";
 import { Button } from "../ui/button";
 export default function COC() {
   return (
-    <div className="relative w-full section-container flex-auto padding-section flex flex-col  items-center justify-center  text-center">
+    <div
+      id="coc"
+      className="relative w-full section-container flex-auto padding-section flex flex-col  items-center justify-center  text-center"
+    >
       <MovingGradient />
       {/* <GridBackground/> */}
       <SectionHeader
@@ -21,21 +24,35 @@ export default function COC() {
       <div className="relative w-full section-container flex-auto mb-20 items-center justify-center  text-left bg-black rounded-lg outline outline-zinc-800 outline-2 p-8">
         <p className="mb-4">
           {" "}
-          At MACSCON (and MACS in general), our rules are simple: Don’t create problems, and there won’t be a problem. 
-          We have a ZERO TOLERANCE policy for harassment of any kind including verbal, physical and sexual harassment to any person.
+          At MACSCON (and MACS in general), our rules are simple: Don’t create
+          problems, and there won’t be a problem. We have a ZERO TOLERANCE
+          policy for harassment of any kind including verbal, physical and
+          sexual harassment to any person.
         </p>
         <p className="mb-4">
-        Harassment includes offensive verbal comments related to gender, sexual orientation, disability, gender identity, age, race, religion, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
+          Harassment includes offensive verbal comments related to gender,
+          sexual orientation, disability, gender identity, age, race, religion,
+          deliberate intimidation, stalking, following, harassing photography or
+          recording, sustained disruption of talks or other events,
+          inappropriate physical contact, and unwelcome sexual attention.
         </p>
         <p className="mb-4">
-        Participants asked to stop any harassing behaviour(s) are expected to comply immediately. This policy applies to both physical and online interactions.
+          Participants asked to stop any harassing behaviour(s) are expected to
+          comply immediately. This policy applies to both physical and online
+          interactions.
         </p>
         <p className="mb-4">
-        Any patron displaying unlawful and/or disruptive behaviour will be asked to leave immediately. If this is not followed, patrons exhibiting this behaviour will be kicked out and banned from any future MACS events as well as reported to Macquarie University and further authorities if need be.
+          Any patron displaying unlawful and/or disruptive behaviour will be
+          asked to leave immediately. If this is not followed, patrons
+          exhibiting this behaviour will be kicked out and banned from any
+          future MACS events as well as reported to Macquarie University and
+          further authorities if need be.
         </p>
         <p>
-        Any prohibited, unwelcome or unprofessional behaviour that is witnessed or suspected, should be reported immediately to a volunteer who can be discerned by their BLUE badge.
-        Thank you for helping us create a safe and welcoming environment for everyone!
+          Any prohibited, unwelcome or unprofessional behaviour that is
+          witnessed or suspected, should be reported immediately to a volunteer
+          who can be discerned by their BLUE badge. Thank you for helping us
+          create a safe and welcoming environment for everyone!
         </p>
       </div>
       {/* <div className="flex justify-between items-center w-full   bg-black rounded-lg outline outline-zinc-800 outline-2 p-8 ">

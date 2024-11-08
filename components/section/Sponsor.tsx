@@ -46,7 +46,10 @@ const SponsorSection: React.FC<SponsorSectionProps> = ({
 
 export default function Sponsor() {
   return (
-    <div className="relative w-full section-container flex-auto padding-section flex flex-col pt-[10vh] md: items-center justify-center text-center">
+    <div
+      id="sponsors"
+      className="relative w-full section-container flex-auto padding-section flex flex-col pt-[10vh] md: items-center justify-center text-center"
+    >
       <MovingGradient />
       {/* <GridBackground/> */}
       <SectionHeader
@@ -56,9 +59,9 @@ export default function Sponsor() {
       />
 
       <div className="space-y-8 md:space-y-24">
-      <SponsorSection
+        <SponsorSection
           title="UNIVERSITY SPONSORS"
-          titleColor="bg-[#A6192E]  inline-block text-transparent bg-clip-text"
+          titleColor="bg-gradient-to-r from-[#A6192E] to-[#d0ccc1] inline-block text-transparent bg-clip-text"
           altText="Event Sponsor"
           images={["/Atlassian.png", "/Atlassian.png", "/Atlassian.png"]}
         />

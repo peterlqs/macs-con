@@ -1,3 +1,5 @@
+"use client";
+
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -12,6 +14,24 @@ export function Navbar() {
     { label: "faq", href: "#faq" },
     { label: "coc", href: "#coc" },
   ];
+
+  function scrollToSection(id: string) {
+    return (e: React.MouseEvent) => {
+      e.preventDefault();
+      const element = document.querySelector(id);
+      if (element) {
+        const offset = 64; // Adjust this value as needed
+        const elementPosition =
+          element.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    };
+  }
+
   return (
     <header className="sticky section-container z-50 bg-background bg-opacity-45 backdrop-blur-xl top-0 border-b flex justify-between w-full shrink-0 items-center padding-section-x py-4">
       <Sheet>
@@ -25,13 +45,15 @@ export function Navbar() {
           <Link href="#" className="mr-6 hidden lg:flex" prefetch={false}>
             <span className="sr-only">Acme Inc</span>
           </Link>
-          <div className="grid gap-2 py-6">
+          <div className="grid gap-2 py-6 mt-[10svh]">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
-                href={link.href}
-                className="italic text-base font-bold group uppercase inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2  transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50   dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+                // href={link.href}
+                className="italic text-base font-bold group uppercase inline-flex h-9 w-max items-center justify-center rounded-md  px-4 py-2  transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50   dark:hover:text-gray-50  dark:focus:text-gray-50 "
                 prefetch={false}
+                onClick={scrollToSection(link.href)}
+                href={""}
               >
                 {link.label}
               </Link>
@@ -47,9 +69,11 @@ export function Navbar() {
         {navLinks.map((link) => (
           <Link
             key={link.href}
-            href={link.href}
-            className="italic text-base font-bold group uppercase inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2  transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+            // href={link.href}
+            className="italic text-base font-bold group uppercase inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2  transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50  dark:focus:text-gray-50 "
             prefetch={false}
+            onClick={scrollToSection(link.href)}
+            href={""}
           >
             {link.label}
           </Link>

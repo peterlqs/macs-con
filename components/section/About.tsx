@@ -10,7 +10,10 @@ import {
 
 export default function About() {
   return (
-    <div className=" bg-secondary-foreground overflow-hidden padding-section-y z-10 rounded-3xl text-secondary relative w-full section-container ">
+    <div
+      id="about"
+      className=" bg-secondary-foreground overflow-hidden padding-section-y z-10 rounded-3xl text-secondary relative w-full section-container "
+    >
       <div className="padding-section-x">
         <MovingGradient />
         <div className="absolute inset-0 flex justify-start items-start">
