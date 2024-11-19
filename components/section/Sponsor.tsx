@@ -36,7 +36,7 @@ const SponsorSection: React.FC<SponsorSectionProps> = ({
           <img
             src={imageSrc}
             alt={`${altText} ${index + 1}`}
-            className="h-40 w-full object-contain"
+            className="h-40 w-96 object-contain sm: h-30 w-30"
           
           />
         </div>
