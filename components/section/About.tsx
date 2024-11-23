@@ -21,14 +21,13 @@ export default function About() {
         </div>
         <SectionHeader
           title="About"
-          description="**Date:** October 25, 2024
-                  <br />
-                  **Time:** 9:00 AM - 12:00 PM
-                  <br />
-                  **Location:**  Room 101, Main Building
-                  <br />
-                  **Note:** Please arrive 15 minutes early to ensure a prompt start.
-                  Light refreshments will be provided."
+          description="
+                  Join us for our first ever MACSCON - a technology convention created by students, for students! Our mission is to connect aspiring tech enthusiasts to industry professionals in an exciting and engaging environment. <br/>
+
+                  <br/> This event will feature a variety of activities including short talks and interactive workshops from industry leaders, industry stalls, a <q>make your own portfolio</q> workshop, and inspiring student and staff demonstrations. You'll also have the chance to say hello to the amazing student societies from the Faculty of Science and Engineering! <br/>
+
+                  <br/> Whether you're eager to learn new skills, ready to connect with industry or just want to come and say hello to your fellow MACS members, MACSCON promises a day full of fun and inspiration!"
+                  
           className="bg-secondary-foreground "
         />
       </div>

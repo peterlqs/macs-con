@@ -11,14 +11,7 @@ export default function COC() {
       {/* <GridBackground/> */}
       <SectionHeader
         title="Code of Conduct"
-        description="**Date:** October 25, 2024 
-            <br />
-            **Time:** 9:00 AM - 12:00 PM 
-            <br />
-            **Location:**  Room 101, Main Building
-            <br />
-            **Note:** Please arrive 15 minutes early to ensure a prompt start. 
-            Light refreshments will be provided."
+        description=""
         className="bg-background"
       />
       <div className="relative w-full section-container flex-auto mb-20 items-center justify-center  text-left bg-black rounded-lg outline outline-zinc-800 outline-2 p-8">
@@ -80,7 +73,7 @@ export default function COC() {
         >
           <span className="text-3xl italic font-semibold">
             {" "}
-            GET YOUR TICKET NOW
+            GET YOUR TICKETS NOW
           </span>
           <Button
             // className="w-18 h-12"

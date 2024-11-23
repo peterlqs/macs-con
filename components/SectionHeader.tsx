@@ -42,7 +42,7 @@ const SectionTitle = ({
 const SectionDescription = ({ description }: { description: string }) => (
   <div className="w-full flex justify-end">
     <p
-      className="text-left max-w-[40ch] w-full"
+      className="text-left  w-full"
       dangerouslySetInnerHTML={{ __html: description }}
     />
   </div>

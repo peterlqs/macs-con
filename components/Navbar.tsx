@@ -12,7 +12,7 @@ export function Navbar() {
     { label: "schedule", href: "#schedule" },
     { label: "sponsors", href: "#sponsors" },
     { label: "faq", href: "#faq" },
-    { label: "coc", href: "#coc" },
+    { label: "code of conduct", href: "#coc" },
   ];
 
   function scrollToSection(id: string) {
@@ -87,7 +87,7 @@ export function Navbar() {
             "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), linear-gradient(to right, #89c5f5, #ffa366, #ae9df5, #f83b60)",
         }}
       >
-        TICKET
+        TICKETS
         <ArrowRightIcon className="w-4 h-4 ml-2" />
       </Button>
 

@@ -60,7 +60,7 @@ export function Hero() {
             Info <InfoCircledIcon className="ml-2" />
           </Button>
           <RainbowButton className="h-9 py-2 px-6 rounded-md">
-            Ticket <ArrowRightIcon className="ml-2" />
+            Tickets <ArrowRightIcon className="ml-2" />
           </RainbowButton>
         </motion.div>
 

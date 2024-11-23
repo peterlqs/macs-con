@@ -55,7 +55,7 @@ export default function Sponsor() {
       {/* <GridBackground/> */}
       <SectionHeader
         title="Sponsor"
-        description="Please arrive 15 minutes early to ensure a prompt start. Light refreshments will be provided."
+        description=""
         className="bg-background"
       />
 

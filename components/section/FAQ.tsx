@@ -18,14 +18,7 @@ export default function FAQ() {
       {/* <GridBackground/> */}
       <SectionHeader
         title="FAQ"
-        description="**Date:** October 25, 2024 
-            <br />
-            **Time:** 9:00 AM - 12:00 PM 
-            <br />
-            **Location:**  Room 101, Main Building
-            <br />
-            **Note:** Please arrive 15 minutes early to ensure a prompt start. 
-            Light refreshments will be provided."
+        description=""
         className="bg-background"
       />
 
@@ -83,7 +76,7 @@ export default function FAQ() {
         <AccordionItem value="item-8">
           <AccordionTrigger> Are there discounts for group registrations or students?  </AccordionTrigger>
           <AccordionContent>
-            TAll group registrations can be found here: <a href="https://events.humanitix.com/macscon-2024" className="text-primary-blue"> https://events.humanitix.com/macscon-2024.</a><br />
+            All group registrations can be found here: <a href="https://events.humanitix.com/macscon-2024" className="text-primary-blue"> https://events.humanitix.com/macscon-2024.</a><br />
             All student tickets have been set to a discounted price.
           </AccordionContent>
         </AccordionItem>

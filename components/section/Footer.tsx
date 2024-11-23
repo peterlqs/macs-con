@@ -2,7 +2,7 @@ import { CalendarIcon } from "@radix-ui/react-icons";
 import { MapIcon } from "lucide-react";
 import Image from "next/image";
 
-export default function COC() {
+export default function footer() {
   return (
     <footer className="bg-black w-full z-10 border-t">
       <div className="padding-section md:px-8 py-8 section-container relative">
