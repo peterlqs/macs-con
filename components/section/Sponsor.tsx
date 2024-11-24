@@ -21,23 +21,24 @@ const SponsorSection: React.FC<SponsorSectionProps> = ({
 }) => (
   <div>
     <h4
-      className={`text-center ${titleColor} text-4xl italic md:text-5xl font-semibold mb-8 md:mb-12`}
+      className={`text-center ${titleColor} text-4xl italic md:text-5xl font-semibold mb-7 md:mb-6`}
     >
       {title}
     </h4>
-    <div className={` grid gap-8 ${
-        images.length === 1 ? "place-items-center" : "lg:grid-cols-2 "
-      }`} >
+    <div
+      className={` grid md:gap-8 gap-2 ${
+        images.length === 1 ? "place-items-center" : "lg:grid-cols-2"
+      }`}
+    >
       {images.map((imageSrc, index) => (
         <div
           key={index}
-          className="bg-black  p-6 sm:p-8 md:p-12 rounded-md flex justify-center items-center rounded-tl-large rounded-br-large"
+          className="bg-black border  p-6 sm:p-8 md:px-10 md:py-4 rounded-md flex justify-center items-center md:rounded-tl-large md:rounded-br-large"
         >
           <img
             src={imageSrc}
             alt={`${altText} ${index + 1}`}
-            className="h-40 w-96 object-contain sm: h-30 w-30"
-          
+            className="h-24 w-96 object-contain sm:h-32 sm:w-80"
           />
         </div>
       ))}
@@ -53,14 +54,10 @@ export default function Sponsor() {
     >
       <MovingGradient />
       {/* <GridBackground/> */}
-      <SectionHeader
-        title="Sponsor"
-        description=""
-        className="bg-background"
-      />
+      <SectionHeader title="Sponsor" description="" className="bg-background" />
 
-<div className="space-y-8 md:space-y-24">
-     <SponsorSection
+      <div className="space-y-8 md:space-y-16">
+        <SponsorSection
           title="UNIVERSITY SPONSORS"
           titleColor="bg-gradient-to-r from-[#A6192E] to-[#d0ccc1] inline-block text-transparent bg-clip-text"
           altText="Event Sponsor"
@@ -76,7 +73,7 @@ export default function Sponsor() {
         <SponsorSection
           title="CAPTURE THE FLAG"
           titleColor="bg-gradient-to-r from-[#800080]  to-[#87CEEB] inline-block text-transparent bg-clip-text"
-          altText="Event Sponsor" 
+          altText="Event Sponsor"
           images={["/SecDim.png", "MQ_SOC.png"]}
         />
         {/* <SponsorSection

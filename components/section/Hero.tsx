@@ -1,3 +1,5 @@
+"use client";
+
 import {
   ArrowRightIcon,
   CalendarIcon,
@@ -9,6 +11,8 @@ import Image from "next/image";
 import { MovingGradient } from "../MovingGradient";
 import { Button } from "../ui/button";
 import { RainbowButton } from "../ui/rainbow-button";
+import Link from "next/link";
+import { scrollToSection } from "../Navbar";
 
 export function Hero() {
   const FADE_UP_ANIMATION_VARIANTS = {
@@ -46,22 +50,28 @@ export function Hero() {
           />
         </motion.div>
         <motion.h2
-          className="text-3xl max-w-xl mb-6 mx-auto"
+          className="text-3xl max-w-[500px] mb-6 mx-auto"
           variants={FADE_UP_ANIMATION_VARIANTS}
         >
-          Discover the latest in cybersecurity, connect with industry leaders,
-          and showcase your talent.
+          Discover the latest in technology, meet industry, showcase your talent
+          and get inspired!
         </motion.h2>
         <motion.div
           className="flex space-x-4 items-center justify-center mx-auto"
           variants={FADE_UP_ANIMATION_VARIANTS}
         >
-          <Button variant={"secondary"}>
+          <Button
+            variant={"secondary"}
+            className="z-50"
+            onClick={scrollToSection("#about")}
+          >
             Info <InfoCircledIcon className="ml-2" />
           </Button>
-          <RainbowButton className="h-9 py-2 px-6 rounded-md">
-            Tickets <ArrowRightIcon className="ml-2" />
-          </RainbowButton>
+          <Link href="https://events.humanitix.com/macscon-2024">
+            <RainbowButton className="h-9 py-2 px-6 rounded-md">
+              Tickets <ArrowRightIcon className="ml-2" />
+            </RainbowButton>
+          </Link>
         </motion.div>
 
         <motion.div

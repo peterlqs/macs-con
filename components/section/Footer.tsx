@@ -46,11 +46,11 @@ export default function footer() {
             </div>
           </div>
         </div>
-        <div className="text-center w-fit mx-auto mt-4 md:mt-6 ">
-          <p className="text-xs md:text-sm lg:text-base text-slate-200">
+        <div className="text-center w-fit mx-auto mt-4 md:mt-12 ">
+          <p className="text-xs md:text-sm lg:text-sm text-slate-300">
             © 2024 Macquarie Association of Computing Students
           </p>
-          <p className="text-xs md:text-sm lg:text-base text-slate-200">
+          <p className="text-xs md:text-sm lg:text-sm text-slate-300">
             Made with love and inspiration from UTS:CSECCON, BSides2024, and
             Astronomy Open Night
           </p>

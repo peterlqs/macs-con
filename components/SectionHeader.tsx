@@ -14,7 +14,9 @@ export function SectionHeader({
   const parsedDescription = parseDescription(description); // Parse description before rendering
 
   return (
-    <div className={`z-50 grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 w-full`}>
+    <div
+      className={`z-50 grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4 mb-8 md:mb-16 w-full`}
+    >
       <SectionTitle title={title} className={className} />
       <SectionDescription description={parsedDescription} />
     </div>

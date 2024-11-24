@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MovingGradient } from "../MovingGradient";
 import { SectionHeader } from "../SectionHeader";
 import { Button } from "../ui/button";
@@ -69,23 +70,25 @@ export default function COC() {
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#89c5f5_0%,#ffa366_25%,#ae9df5_50%,#f83b60_75%,#89c5f5_100%)]" />
         <div
           id="headerTitle"
-          className={`px-4 backdrop-blur-3xl rounded-lg w-full bg-black flex justify-between items-center p-8`}
+          className={`px-4 backdrop-blur-3xl rounded-lg w-full bg-black justify-between items-center p-8 flex flex-col md:flex-row gap-4`}
         >
           <span className="text-3xl italic font-semibold">
             {" "}
             GET YOUR TICKETS NOW
           </span>
-          <Button
-            // className="w-18 h-12"
-            className="text-2xl p-8"
-            variant={"cta"}
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), linear-gradient(to right, #89c5f5, #ffa366, #ae9df5, #f83b60)",
-            }}
-          >
-            BUY NOW
-          </Button>{" "}
+          <Link href="https://events.humanitix.com/macscon-2024">
+            <Button
+              // className="w-18 h-12"
+              className="text-2xl p-8"
+              variant={"cta"}
+              style={{
+                backgroundImage:
+                  "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), linear-gradient(to right, #89c5f5, #ffa366, #ae9df5, #f83b60)",
+              }}
+            >
+              BUY NOW
+            </Button>{" "}
+          </Link>
         </div>
       </div>
     </div>

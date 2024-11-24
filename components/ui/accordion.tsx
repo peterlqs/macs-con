@@ -16,7 +16,7 @@ const AccordionItem = React.forwardRef<
   <AccordionPrimitive.Item
     ref={ref}
     className={cn(
-      "[&[data-state=open]]:outline outline-zinc-800 outline-1 rounded-tl-3xl rounded-br-3xl h-fit ",
+      "[&[data-state=open]]:outline [&[data-state=open]]:outline-2 [&[data-state=open]]:outline-neutral-500 outline-zinc-800 outline-1 rounded-tl-3xl rounded-br-3xl h-fit ",
       className
     )}
     {...props}
@@ -32,7 +32,7 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-1 items-center justify-between py-4 px-4 text-sm font-medium transition-all  [&[data-state=open]>svg]:-rotate-90 text-2xl font-bold rounded-none",
+        "flex flex-1 items-center justify-between py-4 px-4 font-medium transition-all  [&[data-state=open]>svg]:-rotate-90 md:text-2xl text-lg  rounded-none text-left",
         className
       )}
       {...props}
@@ -42,7 +42,7 @@ const AccordionTrigger = React.forwardRef<
       <CircleArrowDown
         color="#fff"
         strokeWidth={1}
-        className="h-12 w-12 shrink-0 text-muted-foreground transition-transform duration-200 "
+        className="md:h-12 md:w-12 ml-2 h-8 w-8 shrink-0 text-muted-foreground transition-transform duration-200 "
       />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
@@ -58,7 +58,7 @@ const AccordionContent = React.forwardRef<
     className="overflow-hidden bg-black rounded-br-3xl text-base data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down text-left p-4   "
     {...props}
   >
-    <div className={cn("pb-4 pt-0", className)}>{children}</div>
+    <div className={cn("", className)}>{children}</div>
   </AccordionPrimitive.Content>
 ));
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;

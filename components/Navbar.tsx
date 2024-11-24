@@ -15,23 +15,6 @@ export function Navbar() {
     { label: "code of conduct", href: "#coc" },
   ];
 
-  function scrollToSection(id: string) {
-    return (e: React.MouseEvent) => {
-      e.preventDefault();
-      const element = document.querySelector(id);
-      if (element) {
-        const offset = 64; // Adjust this value as needed
-        const elementPosition =
-          element.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = elementPosition - offset;
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      }
-    };
-  }
-
   return (
     <header className="sticky section-container z-50 bg-background bg-opacity-45 backdrop-blur-xl top-0 border-b flex justify-between w-full shrink-0 items-center padding-section-x py-4">
       <Sheet>
@@ -79,17 +62,18 @@ export function Navbar() {
           </Link>
         ))}
       </nav>
-
-      <Button
-        variant={"cta"}
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), linear-gradient(to right, #89c5f5, #ffa366, #ae9df5, #f83b60)",
-        }}
-      >
-        TICKETS
-        <ArrowRightIcon className="w-4 h-4 ml-2" />
-      </Button>
+      <Link href="https://events.humanitix.com/macscon-2024">
+        <Button
+          variant={"cta"}
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), linear-gradient(to right, #89c5f5, #ffa366, #ae9df5, #f83b60)",
+          }}
+        >
+          TICKETS
+          <ArrowRightIcon className="w-4 h-4 ml-2" />
+        </Button>
+      </Link>
 
       {/* <div
         className="absolute bottom-0 left-0 right-0 h-[1px] "
@@ -122,3 +106,20 @@ function MenuIcon({ className }: { className?: string }) {
     </svg>
   );
 }
+
+export const scrollToSection = (id: string) => {
+  return (e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.querySelector(id);
+    if (element) {
+      const offset = 64; // Adjust this value as needed
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+};
