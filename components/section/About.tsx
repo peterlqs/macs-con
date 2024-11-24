@@ -28,7 +28,7 @@ export default function About() {
 
     {
       title: "Industry networking session with catering!",
-      description: "🍕 Pizza included.",
+      description: "Catering included.",
     },
     {
       title: "CTF Competition",
